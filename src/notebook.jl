@@ -4,14 +4,17 @@
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ e814a124-f038-11ea-3b22-f109c99dbe03
-# ╠═╡ skip_as_script = true
-#=╠═╡
-using PlutoUI
-  ╠═╡ =#
-
 # ╔═╡ 1cca3d6d-a40a-455c-84d3-dec04f0b496a
 using AbstractPlutoDingetjes, HypertextLiteral
+
+# ╔═╡ e814a124-f038-11ea-3b22-f109c99dbe03
+import PlutoUI
+
+# ╔═╡ 50f734b3-ec1b-45fa-a9f3-8d007237842f
+# ╠═╡ skip_as_script = true
+#=╠═╡
+import PlutoUI: Slider, ColorStringPicker, CounterButton
+  ╠═╡ =#
 
 # ╔═╡ 925a66b2-3564-480c-be12-0e626b01362f
 # ╠═╡ skip_as_script = true
@@ -436,7 +439,6 @@ make_svg(🐢::Turtle;
 	join(🐢.history_svg))</svg>"""
 
 # ╔═╡ 6dbce38e-b0bc-11ea-1126-a13e0d575339
-#=╠═╡
 """
 The same as `turtle_drawing`, but without the animated turtle. This makes it a bit faster for interactive drawings!
 """
@@ -450,7 +452,6 @@ function turtle_drawing_fast(f::Function;
 	
 	return PlutoUI.Show(MIME"image/svg+xml"(), make_svg(🐢; background, size))
 end
-  ╠═╡ =#
 
 # ╔═╡ 45e31b3e-7f25-411a-b7c7-a1a8a7c77ddd
 # ╠═╡ skip_as_script = true
@@ -541,7 +542,6 @@ md"""
 """
 
 # ╔═╡ 329138a4-4f37-4ccc-a5f0-f4bbfbd17a89
-#=╠═╡
 function turtle_drawing(f::Function; 
 	background="white", 
 	size::Tuple{Real,Real}=(30, 30),
@@ -740,7 +740,6 @@ function turtle_drawing(f::Function;
 		""")
 	]; class="turtle-wrapper", style="position: relative; contain: all;")
 end
-  ╠═╡ =#
 
 # ╔═╡ aa724bc5-563f-4421-a55c-84ebd766f364
 #=╠═╡
@@ -831,7 +830,6 @@ function with_lnn_registrations(ex::Expr; turtle_name::Symbol)
 end
 
 # ╔═╡ 675d76e1-7f14-4f9d-97b3-5129d0ef68b9
-#=╠═╡
 begin
 	turtle_drawing
 	with_lnn_registrations
@@ -855,7 +853,6 @@ begin
 		)
 	end
 end
-  ╠═╡ =#
 
 # ╔═╡ a84af845-7f7a-45eb-b1d4-dde8047cb8e8
 # ╠═╡ skip_as_script = true
@@ -1209,6 +1206,7 @@ version = "17.4.0+2"
 # ╠═a84af845-7f7a-45eb-b1d4-dde8047cb8e8
 # ╟─45e31b3e-7f25-411a-b7c7-a1a8a7c77ddd
 # ╠═e814a124-f038-11ea-3b22-f109c99dbe03
+# ╠═50f734b3-ec1b-45fa-a9f3-8d007237842f
 # ╟─925a66b2-3564-480c-be12-0e626b01362f
 # ╟─c347a8ad-c859-4eb2-8fdc-bb7f04c7f70e
 # ╟─fac4f50a-ce65-4f22-af23-0fc73af936f2
