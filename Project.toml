@@ -1,0 +1,25 @@
+name = "PlutoTurtles"
+uuid = "67697473-756c-6b61-6172-6b407461726b"
+authors = ["Fons van der Plas <fons@plutojl.org>"]
+version = "1.0.0"
+
+[deps]
+AbstractPlutoDingetjes = "6e696c72-6542-2067-7265-42206c756150"
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
+
+[compat]
+AbstractPlutoDingetjes = "1.2"
+Compat = "3.47, 4.10"
+HypertextLiteral = "0.9"
+InteractiveUtils = "1"
+Markdown = "1"
+julia = "^1.6"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
