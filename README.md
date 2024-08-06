@@ -1,6 +1,7 @@
 # PlutoTurtles.jl
 Learn Julia programming with interactive drawings and color!
 
+[**Read the (interactive) featured notebook →**](https://featured.plutojl.org/basic/turtles.html)
 
 https://github.com/user-attachments/assets/29953264-f364-4f47-98c6-533ce7218af8
 
