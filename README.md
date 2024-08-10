@@ -6,21 +6,28 @@ Learn Julia programming with interactive drawings and color!
 https://github.com/user-attachments/assets/29953264-f364-4f47-98c6-533ce7218af8
 
 
-# Not yet released
+# How to use
 
-This package is not yet released! But will be released soon. Until then, you can use it like so in Pluto:
-
+Open a Pluto notebook, and write:
 
 ```julia
-begin
-    import Pkg
-    # activate a temporary environment
-    Pkg.activate(mktempdir())
-    Pkg.add([
-        Pkg.PackageSpec(url="https://github.com/JuliaPluto/PlutoTurtles.jl"),
-        Pkg.PackageSpec(name="PlutoUI", version="0.7"),
-    ])
-    using PlutoTurtles, PlutoUI
+using PlutoTurtles
+```
+
+Now you can start making turtle drawings! For example, you can make a triangle. Add a cell with this code:
+
+```julia
+@steps turtle_drawing() do t
+    
+    forward!(t, 3)
+    right!(t, 60)
+
+    forward!(t, 3)
+    right!(t, 60)
+    
+    forward!(t, 3)
+    right!(t, 60)
 end
 ```
 
+To learn more, [**read the (interactive) featured notebook →**](https://featured.plutojl.org/basic/turtles.html)
