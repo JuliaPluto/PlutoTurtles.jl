@@ -1,7 +1,7 @@
 name = "PlutoTurtles"
 uuid = "67697473-756c-6b61-6172-6b407461726b"
 authors = ["Fons van der Plas <fons@plutojl.org>"]
-version = "1.0.0"
+version = "1.0.1"
 
 [deps]
 AbstractPlutoDingetjes = "6e696c72-6542-2067-7265-42206c756150"

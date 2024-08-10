@@ -839,7 +839,7 @@ begin
 			Meta.isexpr(ex.args[1], :call) && ex.args[1].args[1] === :turtle_drawing &&
 			Meta.isexpr(ex.args[2], Symbol("->"), 2) && 
 				Meta.isexpr(ex.args[2].args[1], :tuple)
-		) "Use me like this:\n\n@steps turtle_drawing() do t\n\t# my drawing here\n\t...\nend\n"
+		) "Use the @steps macro like this:\n\n@steps turtle_drawing() do t\n\t# my drawing here\n\t...\nend\n"
 			
 		turtle_name = ex.args[2].args[1].args[1]
 	
