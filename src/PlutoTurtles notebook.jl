@@ -595,7 +595,7 @@ function turtle_drawing(f::Function;
 		div.appendChild(line_highlighter)
 
 		const restart_btn = document.createElement("button")
-		restart_btn.innerText = "Play again"
+		restart_btn.innerText = "⏵ Play again"
 		restart_btn.style.cssText = `
 			position: absolute;
 			bottom: .3em;
