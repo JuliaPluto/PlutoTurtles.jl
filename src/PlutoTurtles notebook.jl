@@ -560,7 +560,7 @@ function turtle_drawing(f::Function;
 		const step_delay = $(step_delay)
 		const history = $(identity(🐢.history_actions))
 		const wrapper = currentScript.closest(".turtle-wrapper")
-		const img = wrapper.firstElementChild
+		const img = wrapper.querySelector("img")
 
 		const div = document.createElement("div")
 		div.style.cssText = `
