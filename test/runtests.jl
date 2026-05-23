@@ -21,3 +21,14 @@ d2 = turtle_drawing_fast() do t::Turtle
     pendown!(t)
     color!(t, "pink")
 end
+
+
+d2 = turtle_drawing_fast() do t::Turtle
+    →(t, 10)
+    ←(t, 10)
+    ↪(t, 90)
+    ↩(t, 90)
+    🧽(t)
+    ✏️(t)
+    🖌️(t, "pink")
+end

@@ -1,10 +1,10 @@
 # PlutoTurtles.jl
+
 Learn Julia programming with interactive drawings and color!
 
 [**Read the (interactive) featured notebook →**](https://featured.plutojl.org/basic/turtles.html)
 
 https://github.com/user-attachments/assets/29953264-f364-4f47-98c6-533ce7218af8
-
 
 # How to use
 
@@ -18,13 +18,13 @@ Now you can start making turtle drawings! For example, you can make a triangle. 
 
 ```julia
 @steps turtle_drawing() do t
-    
+
     forward!(t, 3)
     right!(t, 60)
 
     forward!(t, 3)
     right!(t, 60)
-    
+
     forward!(t, 3)
     right!(t, 60)
 end
@@ -32,7 +32,7 @@ end
 
 To learn more, [**read the (interactive) featured notebook →**](https://featured.plutojl.org/basic/turtles.html)
 
-# Testimonial
+# Testimonials
 
 > Hi there @fonsp and friends!  
 > This is not an actual issue, I just wanted to share a nice experience I've had with your package. Last week I was tasked with mentoring a group of students for an intro to programming, one of whom had never coded before (let's call them A). I tried having A do the same tasks as the rest of the group, but it ended up being too difficult since they had never encountered key concepts like variables and loops.  
@@ -40,3 +40,9 @@ To learn more, [**read the (interactive) featured notebook →**](https://featur
 > Thanks again for your amazing work!
 
 [gdalle](https://github.com/JuliaPluto/PlutoTurtles.jl/issues/2)
+
+> Hey!
+>
+> Just used this to demonstrate cause (code) and effect (turtle moving graphics) to 3 year olds!
+> They don't know words, so I had to use emojis instead! I think it worked! Will keep you posted
+> Many thanks 🥰
